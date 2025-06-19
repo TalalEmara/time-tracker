@@ -1,5 +1,5 @@
 import React, {Fragment} from 'react';
-import styles from '../styles/card.module.css';
+import styles from '../styles/profile.module.css';
 interface profileCard {
     firstName: string;
     lastName: string;
@@ -8,12 +8,16 @@ interface profileCard {
 
 const ProfileCard = () => {
     return (
-        <div className={`${styles.background} ${styles[colorType]}`}>
-            <div className={styles.panel}>
-                <p className={styles.title}>{title}</p>
-                <p className={styles.hours}>{hours}hrs</p>
-                <p className={styles.lastInfo}>Last Week: {lastInfo}hrs</p>
+        <div className={styles.profileContainer}>
+            <div className={styles.infoPanel}>
+                <img src={"https://placehold.co/100x100/png"} className={styles.profileImage}/>
+                <p className={styles.reportLabel}>Report for</p>
+                <p className={styles.NameLabel}>Basel</p>
+                <p className={styles.NameLabel}>Lebas</p>
             </div>
+            <button className={styles.profileButton}>Daily</button>
+            <button className={styles.profileButton}>Weekly</button>
+            <button className={styles.profileButton}>Monthly</button>
         </div>
     );
 };

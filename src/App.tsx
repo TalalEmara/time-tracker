@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import Card from "./components/card";
 import './styles/general.css';
+import Profile from "./components/profile";
 function App() {
   return (
    <div>
@@ -14,7 +15,7 @@ function App() {
        {/*    <Card title={"Social"} hours={"36"} lastInfo={"11"} colorType="social"/>*/}
        {/*    <Card title={"Self-Care"} hours={"36"} lastInfo={"11"} colorType="selfcare"/>*/}
        {/*</div>*/}
-       
+       <Profile/>
    </div>
   );
 }

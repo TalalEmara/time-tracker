@@ -14,7 +14,7 @@
     --color-bg-primary: hsl(226, 43%, 10%);         /* navy-950 */
     --color-bg-secondary: hsl(235, 46%, 20%);       /* navy-900 */
     --color-text-primary: hsl(236, 100%, 87%);      /* navy-200 */
-    --color-text-muted: hsl(235, 45%, 61%);         /* purple-500 */
+    --color-text-muted: hsl(235, 100%, 87%);         /* purple-500 */
 }
 .CardGrid {
     background: var(--color-bg-primary);
