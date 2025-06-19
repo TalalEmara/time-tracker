@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    /* ==== Brand Colors ==== */
+    --color-primary: hsl(246, 80%, 60%);            /* previously purple-600 */
+    --color-accent-work: hsl(15, 100%, 70%);        /* orange-300 */
+    --color-accent-play: hsl(195, 74%, 62%);        /* blue-300 */
+    --color-accent-study: hsl(348, 100%, 68%);      /* pink-400 */
+    --color-accent-exercise: hsl(145, 58%, 55%);    /* green-400 */
+    --color-accent-social: hsl(264, 64%, 52%);      /* purple-700 */
+    --color-accent-selfcare: hsl(43, 84%, 65%);     /* yellow-300 */
+
+    /* ==== Neutral Colors ==== */
+    --color-bg-primary: hsl(226, 43%, 10%);         /* navy-950 */
+    --color-bg-secondary: hsl(235, 46%, 20%);       /* navy-900 */
+    --color-text-primary: hsl(236, 100%, 87%);      /* navy-200 */
+    --color-text-muted: hsl(235, 45%, 61%);         /* purple-500 */
+}
+.CardGrid {
+    background: var(--color-bg-primary);
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-template-rows: repeat(2, 1fr);    /* 2 rows */
+    gap: 5%;
+    padding: 2%;
+}

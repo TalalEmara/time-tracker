@@ -1,13 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+.work { background-color: var(--color-accent-work); }
+.play { background-color: var(--color-accent-play); }
+.study { background-color: var(--color-accent-study); }
+.exercise { background-color: var(--color-accent-exercise); }
+.social { background-color: var(--color-accent-social); }
+.selfcare { background-color: var(--color-accent-selfcare); }
+
 .background {
-    width: 18%;
-    aspect-ratio: 1.5 / 1;
-    background-color: lightsalmon;
-    padding-top: 3% ;
+    font-family: 'Rubik', sans-serif;
+    width: 100%;
+    aspect-ratio: 1 / .8;
+    padding-top: 10% ;
     border-radius: 8%;
     overflow: hidden;
+    margin: 5% 0;
 }
 .panel{
+    border-top-left-radius: 8%;
+    border-top-right-radius: 8%;
     height: 100%;
-    background-color: slategrey;
-    padding: 5%;
+    background-color: var(--color-bg-secondary);
+    padding: 5% 10% 5% 10%;
+}
+.title{
+    font-size: 18px;
+    font-weight: bold ;
+    color: white;
+}
+.hours{
+    font-size: 4em;
+    font-weight: lighter;
+    color: white;
+    margin: 0;
+    margin-top: 10%;
+}
+.lastInfo{
+    font-size: .8em;
+    font-weight: normal;
+    color: rgba(187, 201, 232, 0.75);
 }
