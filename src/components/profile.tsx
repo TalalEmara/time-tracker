@@ -1,23 +1,44 @@
-import React, {Fragment} from 'react';
+import React, {Fragment, useState} from 'react';
 import styles from '../styles/profile.module.css';
-interface profileCard {
+import profileImage from '../images/image-jeremy.png';
+interface ProfileCardProps {
     firstName: string;
     lastName: string;
     imagePath: string;
+    currentMode: number;
+    setCurrentMode: React.Dispatch<React.SetStateAction<number>>;
 }
 
-const ProfileCard = () => {
+const ProfileCard = ({ firstName, lastName, imagePath, currentMode, setCurrentMode }: ProfileCardProps) => {
     return (
         <div className={styles.profileContainer}>
             <div className={styles.infoPanel}>
-                <img src={"https://placehold.co/100x100/png"} className={styles.profileImage}/>
+                <img src={imagePath} className={styles.profileImage} />
                 <p className={styles.reportLabel}>Report for</p>
-                <p className={styles.NameLabel}>Basel</p>
-                <p className={styles.NameLabel}>Lebas</p>
+                <p className={styles.NameLabel}>{firstName}</p>
+                <p className={styles.NameLabel}>{lastName}</p>
             </div>
-            <button className={styles.profileButton}>Daily</button>
-            <button className={styles.profileButton}>Weekly</button>
-            <button className={styles.profileButton}>Monthly</button>
+            <button
+                className={styles.profileButton}
+                style={currentMode === 0 ? { color: 'white', textDecoration: 'underline' } : {}}
+                onClick={() => setCurrentMode(0)}
+            >
+                Daily
+            </button>
+            <button
+                className={styles.profileButton}
+                style={currentMode === 1 ? { color: 'white', textDecoration: 'underline' } : {}}
+                onClick={() => setCurrentMode(1)}
+            >
+                Weekly
+            </button>
+            <button
+                className={styles.profileButton}
+                style={currentMode === 2 ? { color: 'white', textDecoration: 'underline' } : {}}
+                onClick={() => setCurrentMode(2)}
+            >
+                Monthly
+            </button>
         </div>
     );
 };
