@@ -26,6 +26,9 @@
     background-color: var(--color-bg-secondary);
     padding: 5% 10% 5% 10%;
 }
+.panel:hover{
+    background-color: hsl(235, 46%, 40%);  ;
+}
 .title{
     font-size: 18px;
     font-weight: bold ;
